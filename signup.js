@@ -58,7 +58,7 @@ login.addEventListener("submit", async (e) => {
     if (response.ok) {
       alert("sucessfull response");
       window.location.href =
-        "http://127.0.0.1:5500/frontend/student_details_form_page/ui.html";
+        "ui.html";
     } else {
       alert("failed response");
     }
