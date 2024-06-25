@@ -61,7 +61,7 @@ get_students.addEventListener("click", async () => {
         JSON.stringify({ student_list, status: false })
       );
       window.location.href =
-        "http://127.0.0.1:5500/frontend/student_details_page/student.html";
+        "student.html";
     } else {
       alert("Error while getting data in try block");
     }
@@ -87,7 +87,7 @@ interview_list.addEventListener("click", async () => {
       console.log(interview_list);
       localStorage.setItem("interviews", JSON.stringify(interview_list));
       window.location.href =
-        "http://127.0.0.1:5500/frontend/interviews_list_page/interview.list.html";
+        "interview.list.html";
     }
   } catch (err) {
     console.log(err);
@@ -118,7 +118,7 @@ allocated_students.addEventListener("submit", async (e) => {
         JSON.stringify({ student_list, status: true })
       );
       window.location.href =
-        "http://127.0.0.1:5500/frontend/student_details_page/student.html";
+        "student.html";
     }
   } catch (err) {
     console.log(err);
@@ -143,9 +143,9 @@ downloadbtn.addEventListener("click", async (req, res) => {
 });
 interviews.addEventListener("click", () => {
   window.location.href =
-    "http://127.0.0.1:5500/frontend/interview_form_page/interview.html";
+    "interview.html";
 });
 allocate_interview.addEventListener("click", () => {
   window.location.href =
-    "http://127.0.0.1:5500/frontend/allocate_interview_page/interview.allocate.html";
+    "interview.allocate.html";
 });
